@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVolution 2024</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            height: 100vh;
+            background: url(images/background.jpg) no-repeat center center;
+            background-size: cover;
+            color: rgb(245, 247, 247);
+        }
+        .hero h1 {
+            font-size: 4rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+        }
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #ccc;
+        }
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 20px 40px;
+            box-sizing: border-box;
+        }
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        .timeline-item h5 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TechVolution 2024</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+                <li class="nav-item"><a class="nav-link" href="#registration">Registration</a></li>
+                <li class="nav-item"><a class="nav-link" href="#prizes">Prizes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="hero d-flex justify-content-center align-items-center text-center">
+        <div>
+            <h1>Welcome to TechVolution 2024</h1>
+            <p>The Future of Technology Unveiled</p>
+            <a href="#registration" class="btn btn-primary">Register Now</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container py-5">
+        <h2>About TechVolution 2024</h2>
+        <p>TechVolution 2024 is a premier technology conference that brings together industry leaders, innovators, and enthusiasts to explore the future of technology...</p>
+        <p>Techvolution 2024, hosted by SWAG Holdings Sdn Bhd, seeks to offer an extensive conference encompassing trending topics in current technology landscapes, including electric vehicles, artificial intelligence (AI), creative economy and globalisation.</p>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="container py-5">
+        <h2>Event Features</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="images/keynoteSpeaker.jpeg" alt="Feature 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Keynote Speakers</h5>
+                        <p class="card-text">Presentations by industry leaders and visionaries discussing the future of technology and its impact on various sectors...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="images/workshoop.jpeg" alt="Feature 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Workshops and Panels</h5>
+                        <p class="card-text">Interactive sessions and discussions on emerging technologies, best practices, and industry trends...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="images/exibition.jpeg".jpg" alt="Feature 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Demoes [Exibitions]</h5>
+                        <p class="card-text">Live demonstrations of cutting-edge technologies, allowing attendees to see new products in action...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="bg-light py-5">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <div class="card" style="max-width: 500px;">
+                                <div class="card-body">
+                                    <p class="card-text">"Techvolution 2023 was a game-changer for me can't wait for 2024.The hands-on workshops provided practical skills."</p>
+                                    <footer class="blockquote-footer">Jane D., Software Engineer</footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="card" style="max-width: 500px;">
+                                <div class="card-body">
+                                    <p class="card-text">"The event’s atmosphere was electric, and we will gaine a lot of exposure for our product."</p>
+                                    <footer class="blockquote-footer">Michael S., Startup Founder</footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="card" style="max-width: 500px;">
+                                <div class="card-body">
+                                    <p class="card-text">"As a tech enthusiast, I was blown away by the diversity of exhibits and demos. The keynote speeches were enlightening, offering a glimpse into the future of various technologies. I particularly enjoyed the interactive zones where I could experience VR and AI firsthand."</p>
+                                    <footer class="blockquote-footer">Aisha R., Tech Enthusiast</footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="card" style="max-width: 500px;">
+                                <div class="card-body">
+                                    <p class="card-text">"As a student, attending Techvolution 2024 will be an eye-opening experience. It gives me a clear picture of where the industry is headed and what skills I need to develop. The hackathon was especially fun and challenging in  Tech2023, and it was great to collaborate with others passionate about tech."</p>
+                                    <footer class="blockquote-footer">Raj P., University Student</footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events" class="container py-5">
+        <h2>Event Schedule</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Speaker</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td>Opening Keynote</td>
+                        <td>Dr. Jane Doe</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 AM</td>
+                        <td>Workshop: AI and Machine Learning</td>
+                        <td>John Smith</td>
+                    </tr>
+                    <!-- Add more event rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="container py-5">
+        <h2>Gallery</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/gallary1.jpeg" class="img-fluid mb-4" alt="Gallery Image 1">
+            </div>
+            <div class="col-md-4">
+                <img src="images/gallary2.jpeg" class="img-fluid mb-4" alt="Gallery Image 2">
+            </div>
+            <div class="col-md-4">
+                <img src="images/gallary3.jpeg" class="img-fluid mb-4" alt="Gallery Image 3">
+            </div>
+            <div class="col-md-4">
+                <img src="images/gallary4.jpg" class="img-fluid mb-4" alt="Gallery Image 3">
+            </div>
+            <div class="col-md-4">
+                <img src="images/gallary5.jpeg" class="img-fluid mb-4" alt="Gallery Image 3">
+            </div>
+            <div class="col-md-4">
+                <img src="images/gallary6.jpeg" class="img-fluid mb-4" alt="Gallery Image 3">
+            </div>
+            <!-- Add more gallery images as needed -->
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline" class="container py-5">
+        <h2>Event Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h5>2021</h5>
+                <p>First edition of TechVolution launched.</p>
+            </div>
+            <div class="timeline-item">
+                <h5>2022</h5>
+                <p>Introduction of hands-on workshops and panel discussions.</p>
+            </div>
+            <!-- Add more timeline items as needed -->
+        </div>
+    </section>
+
+    <!-- Registration -->
+    <section id="registration" class="container py-5">
+        <h2>Register for TechVolution 2024</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </section>
+
+    <!-- Prizes -->
+    <section id="prizes" class="container py-5">
+        <h2>Prizes and Awards</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Best Start-up</h5>
+                        <p class="card-text"> Recognizing a start-up that has shown significant growth, innovation, and impact in the tech industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Best Innovator of the Year</h5>
+                        <p class="card-text">Awarded to an individual or organization demonstrating exceptional technological innovation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Lifetime Achievement</h5>
+                        <p class="card-text"> Honoring an individual for their long-term contributions and impact on the tech industry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Contact us at: info@techvolution2024.com | Follow us on 
+            <a href="#" class="text-white">Facebook</a>, 
+            <a href="#" class="text-white">Twitter</a>, 
+            <a href="#" class="text-white">Instagram</a>
+        </p>
+        <p>&copy; 2024 TechVolution. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Smooth Scrolling -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <!-- Form Validation -->
+    <script>
+        // Form validation
+        document.querySelector('form').addEventListener('submit', function (e) {
+            const name = document.getElementById('inputName').value;
+            const email = document.getElementById('inputEmail').value;
+            const address = document.getElementById('inputAddress').value;
+
+            if (!name || !email || !address) {
+                e.preventDefault();
+                alert('Please fill out all required fields.');
+            }
+        });
+    </script>
+
+    <!-- Interactive Timeline -->
+    <script>
+        // Interactive timeline
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.addEventListener('mouseover', function () {
+                this.style.backgroundColor = '#f8f9fa';
+            });
+            item.addEventListener('mouseout', function () {
+                this.style.backgroundColor = 'transparent';
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

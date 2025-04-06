@@ -1,0 +1,30 @@
+/* styles.css */
+title{
+  font-family: sans-serif;
+}
+
+/* Center the form vertically */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Add some space around the form */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Style the submit button */
+.btn-primary {
+  width: 100%;
+}
+
+/* Make the form responsive */
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px; /* Adjust as needed */
+  }
+}
